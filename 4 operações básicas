@@ -1,0 +1,25 @@
+v1=$1
+o=$2
+v2=$3
+
+case $o in
+    +)
+        let result=$1+$3
+        ;;
+    -)
+        let result=$1-$3
+        ;;
+    x)
+        let result=$1*$3
+        ;;
+    /)
+        if [ "$v2" -eq 0 ]; then
+       echo "Não é possivel divisir por zero"
+
+        else
+
+        let result=$1/$3
+         fi
+      exit
+esac
+echo "O resultado é " $result
