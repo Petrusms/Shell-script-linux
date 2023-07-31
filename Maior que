@@ -1,0 +1,6 @@
+if [ $1 -gt $2 ]
+then
+  echo O maior valor é $1
+else
+  echo O maior valor é $2
+fi
