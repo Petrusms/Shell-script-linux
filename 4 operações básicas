@@ -24,6 +24,7 @@ case $o in
 esac
 echo "O resultado é " $result
 ou
+#!/bin/bash
 if [ $# -eq 3 ]
 then
     n1=$1
