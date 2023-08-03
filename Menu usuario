@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo "1-Exibir o status da utilização das pasrtições do sistema"
+echo "2-Exibir a relação de usuários logados"
+echo "3-Exibir a data e hora do sistema"
+echo "4-Sair"
+read opcao
+
+case $opcao in 
+
+    1)
+	    resul=$(df -h) 
+            echo $resul    
+        ;;
+    2)
+	    resul=$(who)
+	    echo $resul
+        ;;
+    3)
+	    resul=$(date)
+	    echo $resul
+        ;;
+    4)
+        echo "Então ta"
+  exit 1
+esac
