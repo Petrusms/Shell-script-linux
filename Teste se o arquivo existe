@@ -1,0 +1,7 @@
+arquivo=$1
+if test -f "$arquivo"; then
+    tamanho=$(ls -l "$arquivo" | cut -d ' ' -f 5)
+    echo "O arquivo $arquivo existe e tem $tamanho bytes."
+else
+    echo "O arquivo $arquivo não existe."
+fi
