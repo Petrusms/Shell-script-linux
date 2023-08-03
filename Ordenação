@@ -1,0 +1,11 @@
+#!/bin/bash
+echo $1 >> arq$$
+shift
+
+while [ $# -gt 0 ]
+do
+echo $1 >> arq$$
+shift
+done
+sort arq$$
+rm arq$$
